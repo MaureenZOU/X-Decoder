@@ -54,7 +54,7 @@ Note: Due to zero-padding, filling a single gpu with multiple images may decreas
 ## Inference Demo
 ```sh
 # For Segmentation Tasks
-python demo/demo_captioning.py evaluate --conf_files configs/xdecoder/svlp_focalt_lang.yaml  --overrides WEIGHT /pth/to/ckpt
+python demo/demo_semseg.py evaluate --conf_files configs/xdecoder/svlp_focalt_lang.yaml  --overrides WEIGHT /pth/to/ckpt
 # For VL Tasks
 python demo/demo_captioning.py evaluate --conf_files configs/xdecoder/xdecoder_focalt_last_novg.pt  --overrides WEIGHT /pth/to/ckpt
 ```
